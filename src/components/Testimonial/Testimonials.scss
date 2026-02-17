@@ -1,0 +1,67 @@
+.testimonial {
+  padding-top: 100px;
+  text-align: center;
+
+  .small-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+  }
+
+  .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    flex: 0 1 calc(33.333% - 40px); 
+    min-width: 280px; 
+    max-width: 350px; 
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    .quote-icon {
+      font-size: 34px;
+      color: var(--primary-color);
+    }
+
+    p {
+      font-size: 12px;
+      margin: 12px 0;
+      color: var(--gray-color);
+    }
+
+    img {
+      width: 60px;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-weight: 600;
+      color: var(--black-color);
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .col-3 {
+      flex: 0 1 calc(50% - 30px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .col-3 {
+      flex: 0 1 100%; 
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #ff523b;
+  --secondary-color: #563434;
+  --white-color: #fff;
+  --black-color: #000;
+  --gray-color: #555;
+  --light-gray: #8a8a8a;
+  --light-bg: #f1f1f1;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+  border: none !important;
+  cursor: pointer;
+
+   &:hover {
+        background:#e1422d;
+        transform: translateY(-2px);
+      }
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: var(--gray-color);
+
+  &::after {
+    content: "";
+    background: var(--primary-color);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+
+  img {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+  }
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.col-5 {
+  width: 160px;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
+
+/* Header styles will be in Header component */
+/* Other component-specific styles will be in their respective component folders */

@@ -1,0 +1,28 @@
+.rating {
+  color: #ff523b;
+  margin: 10px 0;
+}
+
+.rating {
+  color: var(--primary-color);
+  margin: 10px 0;
+
+  svg {
+    margin-right: 2px;
+  }
+}
+.product-card:hover .rating svg {
+  animation: star-beat 1s ease infinite;
+}
+
+@keyframes star-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

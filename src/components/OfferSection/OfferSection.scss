@@ -1,0 +1,161 @@
+.offer {
+  background: radial-gradient(#fff, #ffd6d6);
+  margin-top: 80px;
+  padding: 30px 0;
+  
+  .row {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+  }
+  
+  .col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 20px;
+    
+    &:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    img {
+      max-width: 140%; 
+      display: block;
+      margin: 0 auto; /* מרכוז אופקי */
+      margin-top: -70px;
+      transition: transform 0.5s;
+      
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+    
+    p {
+      color: var(--gray-color);
+    }
+    
+    h1 {
+      font-size: 40px;
+      line-height: 60px;
+      margin: 15px 0;
+    }
+    
+    small {
+      color: var(--light-gray);
+      display: block;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: #ff523b;
+      color: #fff;
+      text-align: center;
+      padding: 8px 30px;
+      max-width: 200px;
+      margin: 20px 0 0 0;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+      
+      &:hover {
+        background:#e1422d;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .offer {
+    .row {
+      flex-direction: row; 
+    }
+    
+    .col-2 {
+      padding: 30px;
+      
+      img {
+        max-width: 130%; 
+      }
+      
+      h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .offer {
+    padding: 20px 0;
+    
+    .row {
+      flex-direction: column; 
+    }
+    
+    .col-2 {
+      padding: 25px;
+      text-align: center;
+      
+      img {
+        max-width: 100%; /* התמונה תתאים לרוחב העמודה */
+        margin-bottom: 15px;
+      }
+      
+      h1 {
+        font-size: 34px;
+        line-height: 45px;
+        margin: 15px 0;
+      }
+      
+      .btn {
+  margin-top: 15px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .offer {
+    margin-top: 50px;
+    
+    .col-2 {
+      padding: 10px;
+      
+      h1 {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+     
+      
+      small {
+        font-size: 13px;
+      }
+      
+      .btn {
+  padding: 6px 20px;
+  font-size: 14px;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+    
+    }
+  }
+}
