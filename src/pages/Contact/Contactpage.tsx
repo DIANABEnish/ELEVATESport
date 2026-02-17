@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ContactPage.scss";
+import "./Contactpage.scss";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
