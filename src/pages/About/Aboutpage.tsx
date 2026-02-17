@@ -1,4 +1,4 @@
-import "./AboutPage.scss";
+import "./Aboutpage.scss";
 
 const AboutPage = () => {
   const values = [
