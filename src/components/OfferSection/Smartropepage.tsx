@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 import CustomSelect from "../Customselect/CustomSelect";
-import "./SmartRopePage.scss";
+import "./Smartropepage.scss";
 
 const smartRope = {
   id: 99, // unique ID outside the products array
