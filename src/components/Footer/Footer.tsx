@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <p className="copyright">Copyright 2025 - ELEVATE SPORT</p>
+        <p className="copyright">Copyright 2025 - DB Digital</p>
       </div>
     </div>
   );
